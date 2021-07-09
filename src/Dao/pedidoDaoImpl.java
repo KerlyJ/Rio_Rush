@@ -118,7 +118,7 @@ public class pedidoDaoImpl implements pedidoDAO {
         this.conn = FactoryConexion.open(FactoryConexion.PGSQL); // abrir la conexion con bd mysql
         try {
             StringBuilder sql = new StringBuilder(); // para crear la sentencia sql
-            sql.append("DELETE FROM direccion WHERE Id_pedido = ").append(id); // crea la sentencia de borrado
+            sql.append("DELETE FROM pedido WHERE Id_pedido = ").append(id); // crea la sentencia de borrado
             this.conn.execute(sql.toString()); // ejecuta sentencia sql
             delete = true;
         } catch (Exception e) {
