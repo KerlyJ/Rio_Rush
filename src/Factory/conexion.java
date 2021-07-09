@@ -1,27 +1,16 @@
-package datalayer;
+package Factory;
 
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.DriverManager;
 
-public class conexion {  //clase abstracta para cadenas de conexion a distintas bd
-  // protected String[] params;
+public abstract class conexion {  //clase abstracta para cadenas de conexion a distintas bd
+   protected String[] params;
    protected Connection connection;  //objeto de conexion
    
-  // abstract Connection open();    //metodo abstracto para devolver la conexión creada
+   abstract Connection open();    //metodo abstracto para devolver la conexión creada
    
-   public Connection open() {   //implementacion del metodo abstracto que abre bd
-    try{
-        Class.forName("org.postgresql.Driver");
-        this.connection = DriverManager.getConnection("jdbc:postgresql:5432//localhost/"+"Rio-Rush", "postgres", "HA123");  //subindice 0: nombre bd. paremtro 1: usr; parametro 2: clave.. llega en constructor
-    } catch (Exception e){
-        e.printStackTrace();
-    }
-    return this.connection;     //devuelve la conexion q es atributo declarada en superclase
-}
-
    public ResultSet query(String query){ //metodo para recibir un query y ejecutar
        Statement st;        //objeto para ejecutar las querys
        ResultSet rs = null;  //tabla para contener los datos que se generen. Incia con Null
