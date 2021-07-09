@@ -1,11 +1,11 @@
-package model;
+package Model;
 
-public class producto {
+public class Producto {
     private int idProducto;
     private String ruc ;
     private String descripcion;
     private  double  precioUnitario;
-    public producto(int idProducto, String ruc, String descripcion, double precioUnitario) {
+    public Producto(int idProducto, String ruc, String descripcion, double precioUnitario) {
         this.idProducto = idProducto;
         this.ruc = ruc;
         this.descripcion = descripcion;

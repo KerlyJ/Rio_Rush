@@ -1,10 +1,10 @@
 package Dao;
-import  model.producto;
+import  Model.Producto;
 import java.util.List;
 public interface productoDAO {
-    public List<producto> list ();
-    public producto edit (int id);
-    public boolean save (producto producto);
+    public List<Producto> list ();
+    public Producto edit (int id);
+    public boolean save (Producto producto);
     public boolean delete (int id);
 
 }
