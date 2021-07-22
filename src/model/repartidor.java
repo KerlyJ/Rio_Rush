@@ -1,4 +1,4 @@
-package model;
+package Model;
 
 public class repartidor{
     private String Cedula_repartidor;

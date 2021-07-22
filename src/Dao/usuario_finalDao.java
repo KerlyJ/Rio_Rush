@@ -1,5 +1,5 @@
 package Dao;
-import model.usuario_final;
+import Model.usuario_final;
 import java.util.List;
 
 public interface usuario_finalDao {

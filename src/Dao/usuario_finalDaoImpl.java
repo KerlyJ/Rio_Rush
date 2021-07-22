@@ -1,7 +1,7 @@
 package Dao;
 
 import datalayer.conexion;
-import model.usuario_final;
+import Model.usuario_final;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;

@@ -1,5 +1,5 @@
 package Dao;
-import model.repartidor;
+import Model.repartidor;
 import java.util.List;
 
 public interface repartidorDao {

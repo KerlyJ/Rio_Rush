@@ -1,4 +1,4 @@
-package model;
+package Model;
 
 public class usuario_final{
     private String Cedula_usuario;

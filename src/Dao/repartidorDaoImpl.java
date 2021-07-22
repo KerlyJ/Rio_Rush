@@ -1,7 +1,7 @@
 package Dao;
 
 import datalayer.conexion;
-import model.repartidor;
+import Model.repartidor;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
